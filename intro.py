@@ -321,11 +321,7 @@ print(x)
 print(type(x))
 
 
-
-
-
-
-
+# This is sample comment for git
 
 
 
