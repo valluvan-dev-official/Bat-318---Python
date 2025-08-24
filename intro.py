@@ -310,9 +310,10 @@ print(type(name))
 """
 
 
-# Type Casting :
+# Type Casting and Convertion :
 
 
+"""
 num = "3asd45"
 
 x = int(num)
@@ -320,8 +321,12 @@ x = int(num)
 print(x)
 print(type(x))
 
+"""
 
-# This is sample comment for git
+
+
+
+
 
 
 
