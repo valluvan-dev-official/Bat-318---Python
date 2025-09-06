@@ -133,6 +133,7 @@ Snake Case
 5. Set Data Type
 6. Boolean Data Type
 7. None Data Type
+
 """
 
 
@@ -240,6 +241,7 @@ print(type(z))
 # String : str()
 
 
+
 '''
 name = 'varun45'
 
@@ -256,6 +258,17 @@ print(type(info))
 
 
 '''
+
+text = '''name
+age 
+address
+'''
+
+name = """Varun
+goog mornig..!
+"""
+
+# print(text)
 
 # Sequence Data Type :
 
@@ -324,8 +337,20 @@ print(type(x))
 """
 
 
+# name = input("Enter your name : ")
 
+# print("my name is",name)
 
+"""
+age = "34.4567"
+
+new_age = float(age)
+
+print(new_age)
+
+print(type(new_age))
+
+"""
 
 
 
