@@ -124,8 +124,10 @@ or
 not
 
 """
+# Examples :
 
 
+"""
 a = 20
 
 b = 7
@@ -134,3 +136,88 @@ b = 7
 # print(a == b or b > a)
 
 print(not(a > b) )
+
+"""
+
+# Identity Operator :
+
+"""
+is
+
+is not
+
+"""
+
+# Examples :
+
+
+"""
+a = [10,20]
+
+b = [10,20]
+
+c = a
+
+print(a is c)
+
+"""
+
+# Membership Operator :
+
+"""
+in 
+
+not in
+"""
+
+# Examples :
+
+"""
+name = ["Harish","Varun","Eepshiba","debhi"]
+
+print("debhi" in name)
+
+"""
+
+# Bitwise Operators :
+
+"""
+
+bitwise and - &  --> compare each bit of two numbers
+
+         or - |  
+
+        xor - ^
+
+        not - ~
+
+  leftshift - >>
+
+  rightshift - <<
+
+"""
+
+# Operator Precedence 
+
+
+# num = 10 + 2 * 2 / 4 +(3 * (4/2) ) + 6 - 4
+
+# print(num)
+
+
+
+"""
+a = 5 * (2 + 3) ** 2 - 10 / 2
+
+print(a)
+
+"""
+
+
+
+
+
+
+
+
+
