@@ -56,3 +56,51 @@ print(x.split("W"))
 print(x.replace('welcome','Thank You'))
 
 """
+
+# Concatenation :
+
+"""
+    we cannot combine strings & number
+    Only strings are concatenate
+
+"""
+# Examples :
+
+"""
+x = "Varun"
+
+y = "Welcome"
+
+z = "hi"+ " " + x + " " + y + " " + "to Chennai."
+
+print(z)
+
+"""
+
+#  Format Strings : format()
+
+"""
+ The format method takes unlimited number of arguments are passed in respective placeholders
+
+"""
+
+name = input("Enter Your name : ")
+
+office = input("Enter Your office : ")
+
+salary = int(input("Enter Your salary : "))
+
+
+'''
+txt = "hi my name is {2} ,i'm working in {0} and my salary is {1}"
+
+print(txt.format(office,salary,name))
+
+'''
+
+# f-string :
+
+txt = f"hi my name is {name} ,i'm working in {office} and my salary is {salary}"
+
+print(txt)
+
