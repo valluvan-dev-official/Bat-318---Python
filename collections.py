@@ -194,3 +194,134 @@ fruits.extend(vegetables)
 
 
 # ========= Copy List Items ==========
+
+
+# 1. copy() : returns a copy of the list
+# 2. list() : creates a list object
+
+
+"""
+cars = ["BMW","Audi","Tata","Maruti","Hyundai"]
+
+# my_cars = cars.copy()
+
+my_cars = list(cars)
+
+print(my_cars)
+
+"""
+
+# ========= Join List Items ==========
+
+# 1. + operator
+# 2. extend()
+# 3. append()
+
+"""
+a = [1,2,3]
+
+b = [4,5,6]
+
+c = a + b
+
+print(c)
+
+"""
+
+
+# ============ Tuple ===============
+
+"""
+    is used to store multiple items in a single variable
+    - Ordered
+    - Unchangeable
+    - Allows Duplicates
+    - Indexed
+    - can store different data types
+    - we cannot change,add,remove items in a tuple after it has been created
+    - we can use tuple() constructor to create a tuple
+
+"""
+
+# fruits = ('apple','banana','cherry','orange')
+
+# print(fruits)
+# print(type(fruits))
+
+
+# fruits =('apple',)
+
+# print(fruits)
+# print(type(fruits))
+
+
+# Constructor : tuple()
+
+# x = tuple([234])
+
+# print(x)
+# print(type(x))
+
+
+# ========= Access Tuple Items : =========
+
+# fruits = ('apple','banana','cherry','orange',"mango","grapes")
+
+# print(fruits[2])
+
+# fruits[2] = "kiwi"  # we cannot change the value of a tuple
+
+# print(fruits[0:5:2])
+
+
+# =========== update tuple items ==========
+"""
+    we cannot change,add,remove items in a tuple after it has been created
+
+    but we can convert the tuple into a list ,change the list and convert it back to tuple
+
+"""
+
+# fruits = ('apple','banana','cherry','orange',"mango","grapes")
+
+# x = list(fruits)
+
+# x[1] = "kiwi"
+
+# fruits = tuple(x)
+
+# print(fruits)
+
+
+# ========= Unpack a tuple ==========
+
+# Using asterisk * :
+
+"""
+fruits = ('apple','banana','cherry',"mango","grapes","orange")
+
+*green,yellow,red = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+"""
+
+# ========= Join Tuple ==========
+
+# 1. + operator
+# 2. multiply operator *
+
+"""
+fruits = ('apple','banana','cherry')
+vegetables = ('carrot','potato','brinjal')
+
+# all_items = fruits + vegetables
+
+all_items = fruits * 3
+
+print(all_items)
+
+
+"""
