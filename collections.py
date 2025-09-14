@@ -325,3 +325,180 @@ print(all_items)
 
 
 """
+
+
+# ========= Set Methods ==========          
+
+
+"""
+
+    A set is a collection which is unordered, unchangeable*, and unindexed. 
+    In Python sets are written with curly brackets.
+
+    - Unordered
+    - Unindexed
+    - No Duplicates Allowed
+
+    we can store different data types in a set
+
+    we can add or remove items in a set after it has been created
+
+    set do not allow duplicate values
+
+    {}
+
+    we can use set() constructor to create a set
+
+    True and 1 are considered as a same value in a set and are treated as duplicates
+
+    False and 0 are considered as a same value in a set and are treated as duplicates
+
+"""
+
+# Examples :
+
+"""
+my_set = {10,"Hello",True,1345.5,10,0,False,("apple","banana","cherry","orange")}
+
+fruits = ["apple","banana","cherry","orange"]
+
+
+print(my_set)
+
+"""
+
+# Constructor : set()
+
+
+"""
+myset = set(("apple","banana","cherry","orange","apple","Hello",100,234))
+
+
+print(myset)    
+print(type(myset))
+
+"""
+
+# Access Set Items :
+
+"""
+    we cannot access items in a set by referring to an index or a key
+    but we can loop through the set items using a for loop , or we can use in keyword to check if an item exists in the set
+
+"""
+
+# fruits = {"apple","banana","cherry","orange"}
+
+# for item in fruits:
+
+#     print(item)
+
+
+# ======== Add Set Items : ========
+
+# 1. add() : add a single item to the set
+# 2. update() : add multiple items to the set (can be list,tuple,set)
+
+# add() :
+
+"""
+fruits = {"apple","banana","cherry"}
+
+fruits.add("orange")
+fruits.add("kiwi")
+
+print(fruits)
+
+"""
+
+
+# update() :
+
+
+"""
+cars = {"BMW","Audi","Tata"}
+
+cars.update(("Maruti","Hyundai"))
+
+print(cars)
+
+# my_set = {10,"Hello",True,1345.5,10,0,False,("apple","banana","cherry","orange")}
+
+# print(my_set)
+
+"""
+
+# Join Two Sets :
+
+# 1. union() : returns a new set with all items from both sets
+# 2. update() : inserts all items from one set into another
+
+
+"""
+a = {"apple","banana","cherry"}
+b = {"orange","mango","kiwi"}
+
+c = a.union(b)
+
+print(c)
+
+"""
+# Remove Set Items :
+
+# 1. remove() : removes the specified item, raises an error if the item does not exist
+# 2. discard() : removes the specified item, does not raise an error if the
+# 3. pop() : removes the last item, raises an error if the set is empty
+# 4. clear() : removes all the items in the set
+# 5. del : deletes the set completely
+
+
+
+# Common and Uncommon Items :
+
+# 1. intersection() : returns a set that contains the items that exist in both sets
+# 2. intersection_update() : removes the items that are not present in both sets
+# 3. symmetric_difference() : returns a set that contains all items from both sets, except the items that are present in both sets
+# 4. symmetric_difference_update() : removes the items that are present in both sets
+# 5. difference() : returns a set that contains the items that exist in the first set but not in the second set
+# 6. difference_update() : removes the items that are present in both sets from the first set
+
+
+
+
+set1 = {"apple","banana","cherry","orange"}
+
+set2 = {"google","microsoft","apple"}
+
+
+# result = set1.intersection(set2)
+
+# result = set2.difference(set1)
+
+# print(result)
+
+
+# print(set1)
+
+# set1.intersection_update(set2)
+
+# set2.difference_update(set1)
+
+# print(set2)
+
+
+
+# Symmetric Difference :
+
+"""
+    The symmetric_difference() method returns a set that contains all items from both sets, except the items that are present in both sets.
+
+    The symmetric_difference_update() method removes the items that are present in both sets, leaving only items that are unique to each set.
+"""
+
+# result = set1.symmetric_difference(set2)
+
+# print(result)
+
+set1.symmetric_difference_update(set2)
+
+print(set1)
