@@ -463,11 +463,11 @@ print(c)
 # 6. difference_update() : removes the items that are present in both sets from the first set
 
 
+# Example :
 
+# set1 = {"apple","banana","cherry","orange"}
 
-set1 = {"apple","banana","cherry","orange"}
-
-set2 = {"google","microsoft","apple"}
+# set2 = {"google","microsoft","apple"}
 
 
 # result = set1.intersection(set2)
@@ -499,6 +499,144 @@ set2 = {"google","microsoft","apple"}
 
 # print(result)
 
-set1.symmetric_difference_update(set2)
+# set1.symmetric_difference_update(set2)
 
-print(set1)
+# print(set1)
+
+
+
+# ========= Dictionary ==========
+
+"""
+mydict = {
+    "name" : "John",
+    "age" : 30,
+    "city" : "New York"
+}
+
+    - Key : value pairs
+    - Ordered
+    - Changeable
+    - No Duplicates Allowed
+
+    - can store different data types
+    - we can change,add,remove items in a dictionary after it has been created
+    - we can use dict() constructor to create a dictionary
+
+"""
+
+# Examples :
+
+"""
+my_dict = {"name":"John","age":30,"city":"New York","work":"John"}
+
+print(my_dict)
+print(type(my_dict))
+
+"""
+
+# Constructor : dict()
+
+"""
+my_dict = dict(name = "John", age = 30 , city = "Chennai")
+
+print(my_dict)
+print(type(my_dict))
+
+"""
+
+
+# Access Dictionary Items :
+
+"""
+    we can access the items of a dictionary by referring to its key name
+
+    we can also use the get() method to access the items
+
+"""
+
+# Employee = {"name":"Harish","age":24,"city":"Chennai","work":"Developer"}
+
+# print(Employee.get("name"))
+
+# print(Employee["city"])
+
+
+#  ======== get values ========
+
+# values() :
+
+# print(Employee.values())
+
+
+# keys() :
+
+# print(Employee.keys())
+
+
+# items() :
+
+# print(Employee.items())
+
+
+# ============== Change Dictionary Items : ==============
+
+# Using keyname :
+
+# Employee = {"name":"Harish","age":24,"city":"Chennai","work":"Developer"}
+
+# Employee["work"] = "Manager"
+
+# Update() :
+
+# Employee.update({"city":"Bangalore"})
+
+# print(Employee)
+
+
+# ============== Add Dictionary Items : ==============
+
+# Using keyname :
+
+# Employee = {"name":"Harish","age":24,"city":"Chennai","work":"Developer"}
+
+# Employee["email"] = "harish@example.com"
+
+# Employee.update({"phone":1234567890})
+
+# print(Employee)
+
+
+# ============== Remove Dictionary Items : ==============
+
+# 1. pop() : removes the item with the specified key name
+# 2. popitem() : removes the last inserted item
+# 3. del : removes the item with the specified key name
+# 4. clear() : removes all the items in the dictionary
+
+
+Employee = {"name":"Harish","age":24,"city":"Chennai","work":"Developer"}
+
+
+# pop() :
+
+# Employee.pop("age")
+
+
+# popitem() :
+
+# Employee.popitem()
+
+
+# del :
+
+# del Employee["city"]
+
+# del Employee
+
+
+# clear :
+
+Employee.clear()
+
+print(Employee)
