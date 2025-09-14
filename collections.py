@@ -615,7 +615,7 @@ print(type(my_dict))
 # 4. clear() : removes all the items in the dictionary
 
 
-Employee = {"name":"Harish","age":24,"city":"Chennai","work":"Developer"}
+# Employee = {"name":"Harish","age":24,"city":"Chennai","work":"Developer"}
 
 
 # pop() :
@@ -637,6 +637,67 @@ Employee = {"name":"Harish","age":24,"city":"Chennai","work":"Developer"}
 
 # clear :
 
-Employee.clear()
+# Employee.clear()
 
-print(Employee)
+# print(Employee)
+
+
+# ========== Nested Dictionary =============
+
+# family = {
+
+#     "Member-1" : {"name" : "Harish", "age" : 25 , "Salary" : 150000},
+#     "Member-2" : {"name" : "Monisha", "age" : 15 , "Salary" : 300000}
+
+# }
+
+
+# print(family)
+
+
+"""
+Member_1 = {"name" : "Harish", "age" : 25 , "Salary" : 150000}
+
+Member_2 = {"name" : "Monisha", "age" : 15 , "Salary" : 300000}
+
+family = {
+    
+        "Member-1" : Member_1,
+        "Member-2" : Member_2
+        
+          }
+
+print(family)
+
+"""
+# ============== Accessing Neste Dictionary ================
+
+
+# Example
+
+
+family = {
+
+    "Member-1" : {"name" : "Harish", "age" : 25 , "Salary" : 150000},
+    "Member-2" : {"name" : "Monisha", "age" : 15 , "Salary" : 300000}
+
+}
+
+
+# print(family["Member-1"]["age"])
+
+# print(family.get("Member-1").get("Salary"))
+
+# family["Member-1"]["age"] = 30
+
+
+
+# ========== Update in Nested Dictionary ==============
+
+# Outer Dictionary :
+
+# family.update({"Member-1":{"name" :"varun","age":35}})
+
+family["Member-2"].update({"age" : 20})
+
+print(family)
