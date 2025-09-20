@@ -169,3 +169,38 @@ while countdown > 0:
     countdown -= 1
 
 """
+
+# Break and Continue in While :
+
+
+"""
+i = 0 # 1 2 3
+
+while i < 5 : # 0 1 2 3
+
+    i += 1
+
+    if i == 3: # 0 1 2 3
+        # break
+        continue
+
+    print(i) # 0 1 2
+    # i += 1 # 1 2 3
+    
+"""
+
+#  Else in While Loop
+
+i = 0
+
+while i < 5 :
+
+    if i == 3:
+        break
+
+    print(i)
+
+    i += 1
+else:
+    print("Loop Completed")
+
