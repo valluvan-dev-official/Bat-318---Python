@@ -79,6 +79,7 @@ else:
 
 # Nested Loops :
 
+"""
 students = ["Arun","Varun","Monisha"]
 
 subjects = ["Tamil","English","Maths","Science"]
@@ -92,3 +93,79 @@ for std in students: # A  V  M
         print(sub)
 
     print("-------------")
+
+"""
+
+# Range Function:
+
+# range(start,stop(n-1),step)
+
+"""
+- range() is a built-in function in python.
+- range() is used to generate a sequence of numbers.
+- range() is used to iterate over a sequence of numbers.
+- range() is used to generate a sequence of numbers from 0 to n-1.
+
+Generates a sequence of numbers, commonly used in for loops.
+
+"""
+
+# Example :
+
+
+"""
+for i in range(1,10,3):
+    
+    print(i)
+
+"""
+
+
+# While Loop :
+
+"""
+    - while loop is used to execute a block of code repeatedly.
+    - while loop is used to execute a block of code repeatedly until a certain condition is met.
+    - can execute a set of statements as long as a condition is true 
+
+while something_is_true:
+    do something repeatedly
+
+Key Features:
+
+Executes a block of code as long as a specified condition is True.
+The number of iterations depends on the condition.
+
+syntax :
+
+while condition:
+    # Code to execute while the condition is True
+
+"""
+
+# ex :
+
+
+"""
+i = 0 # 1 2 3 4 5
+
+while i < 5: # 0 1 2 3 4 5
+
+    print(i) # 0 1 2 3 4
+
+    i += 1 # 1 2 3 4 5
+
+"""
+
+# Ex 2:
+
+"""
+countdown = 5
+
+while countdown > 0:
+
+    print(countdown)
+
+    countdown -= 1
+
+"""
