@@ -191,6 +191,7 @@ while i < 5 : # 0 1 2 3
 
 #  Else in While Loop
 
+"""
 i = 0
 
 while i < 5 :
@@ -203,4 +204,9 @@ while i < 5 :
     i += 1
 else:
     print("Loop Completed")
+
+"""
+
+
+# Task: Voting Eligibility Checker
 
