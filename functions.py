@@ -172,40 +172,125 @@ print(mul_)
 
 """
 
+# ========= Function Arguments in Python ============
+
+
+# Arguments :
+
+"""
+    - information can be passed into function is called as a arguments.
+
+    dont's :
+
+        - function must be called with correct number of arguments.
+
+        
+    Types of Arguments :
+
+        1. Positional Arguments
+        2. Arbitrary Arguments 
+        3. Keyword Argumnts 
+        4. Arbitrary Keyword Arguments
+"""
+
+# Arbitrary Arguments :
+
+"""
+    - if the number of arguments is unknown add * before the parameter.
+    - Use * for variable-length arguments.
+"""
+
+# Example :
+
+"""
+def welome_msg(*customers):
+
+  for name in customers:
+
+    print("Welcome to Our Store ",name)
 
 
 
+welome_msg("Harish","mani","Vikram","vijay")
+
+"""
+
+
+# Keyword Arguments :
+
+
+"""
+    - Arguments passed as key=value.
+    - this way the order of the arguments does not match
+"""
+
+# Example :
+
+"""
+def greet(name,age):
+
+    print(f"{name} is {age} years old.")
+
+
+greet(age = 30,name = "Arun")
+
+"""
+
+
+# Arbitrary Keyword Arguments :
+
+"""
+- Use ** for variable-length keyword arguments.
+- if the number of keyword arguments is unknown  add double ** before the parameter.
+
+"""
+
+# example :
+
+"""
+def info(**details):
+
+    # print(details)
+
+    for key,value in details.items():
+
+        print(f"{key} = {value}")
 
 
 
+info(name = "varun",age =25 ,Address = "Chennai")
+
+"""
+
+# Default Parameter :
 
 
+"""
+Provide default values.
+
+if we call the function without argument it uses the default value.
+
+"""
+
+# Examples :
+
+"""
+def myfun(name = "Bala",country = "India"):
+
+    print(f" Hi i'm {name} i'm from {country}")
 
 
+myfun("Varun","USA")
 
+myfun("Mathi")
 
+myfun("Arjun","UK")
 
+myfun("Sai")
 
+myfun()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""
 
 
 
