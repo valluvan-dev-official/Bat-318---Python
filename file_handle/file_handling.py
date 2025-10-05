@@ -243,14 +243,87 @@ print(f.read(10))
 
 """
 
+# Example :
 
+"""
 with open("intro.txt") as f:
 
     print(f.read())
 
+"""
+
+# Writing Multiple lines in a file :
+
+"""
+lines = ['Hello World\n', 'Welcome to Python\n']
 
 
+with open("intro.txt","a") as f:
+
+    f.writelines(lines)
+
+"""
+
+# working with csv files :
+
+import csv 
 
 
+"""
+with open("file.csv","w") as f:
 
+    w = csv.writer(f)
+
+    w.writerow(["Rno","Name","Class"])
+
+    num = int(input("Enter num of Students : "))
+
+    for std in range(num):
+
+        Rno = int(input("Enter Your Roll No : "))
+        Name = input("Enter Your Name : ")
+        Class = input("Enter Class : ")
+
+        w.writerow([Rno,Name,Class])
+
+"""
+
+"""
+f = open("file.csv","r")
+
+r = csv.reader(f)
+
+List = list(r)
+
+# print(List)
+
+for line in List:
+    # print(line)
+
+    for data in line:
+        # print(data)
+        print(line,end="")
+    print()
+
+"""
+
+
+# Working in Binary Files :
+
+
+"""
+f = open("img.jpg","rb")
+
+data = f.read()
+
+# print(data)
+
+f = open("new_img.jpg","wb")
+
+f.write(data)
+
+
+f.close()
+
+"""
 
